@@ -1,0 +1,14 @@
+[package]
+name = "app"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+opentelemetry = { version = "0.17.0", features = ["trace"] }
+opentelemetry-jaeger = "0.16.0"
+tracing = "0.1.35"
+tracing-attributes = "0.1.22"
+tracing-opentelemetry = { version = "0.17.4", features = ["tracing-log", "default"] }
+tracing-subscriber = "0.3.14"
