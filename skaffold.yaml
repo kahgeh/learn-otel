@@ -1,0 +1,19 @@
+apiVersion: skaffold/v2beta29
+kind: Config
+metadata:
+  name: learn-otel
+build:
+  artifacts:
+    - image: client
+      context: .
+      docker:
+        dockerfile: client.Dockerfile
+    - image: server
+      context: .
+      docker:
+        dockerfile: server.Dockerfile
+deploy:
+  kubectl:
+    manifests:
+      - infra/client/local.yaml
+      - infra/server/local.yaml
