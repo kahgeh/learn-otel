@@ -1,0 +1,8 @@
+[environment]
+debug = "false"
+
+[http]
+port = "6001"
+
+[logging]
+level = "INFO"

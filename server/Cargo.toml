@@ -1,0 +1,16 @@
+[package]
+name = "server"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+axum = "0.5.11"
+serde = { version = "1.0.138", features = ["derive"] }
+tokio = { version = "1.19.2", features = ["full"] }
+common = { path = "../common" }
+tracing = "0.1.35"
+opentelemetry = "0.17.0"
+opentelemetry-http = "0.6.0"
+tracing-opentelemetry = "0.17.4"

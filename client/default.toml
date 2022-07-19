@@ -1,0 +1,9 @@
+[environment]
+debug = "false"
+
+[http]
+port = "6000"
+
+[logging]
+level = "INFO"
+

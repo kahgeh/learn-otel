@@ -6,6 +6,7 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+config = "0.13.1"
 opentelemetry = { version = "0.17.0", features = ["rt-tokio-current-thread"] }
 opentelemetry-jaeger = { version = "0.16.0", features = ["rt-tokio", "rt-tokio-current-thread"] }
 serde = "1.0.138"
